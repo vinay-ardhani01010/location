@@ -7,7 +7,7 @@ var ip = 0;
 app.get('/',(req,res)=>{
   var ip = req.ip;
 })
-fetch('http://www.geoplugin.net/json.gp/')
+fetch('https://freegeoip.app/json/')
   .then(response => response.json())
   .then(data => {
     console.log(data)
